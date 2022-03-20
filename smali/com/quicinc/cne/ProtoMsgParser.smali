@@ -3107,7 +3107,7 @@
 
     const/4 v9, 0x0
 
-    invoke-static {v6, v8, v7, v9, v4}, Ljava/lang/System;->arraycopy([BI[BII)V
+    invoke-static {v6, v8, v7, v9, v4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
     :try_end_0
     .catch Ljava/lang/IndexOutOfBoundsException; {:try_start_0 .. :try_end_0} :catch_2
     .catch Ljava/lang/ArrayStoreException; {:try_start_0 .. :try_end_0} :catch_1

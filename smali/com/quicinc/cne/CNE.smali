@@ -7133,7 +7133,7 @@
 
     const/4 v8, 0x0
 
-    invoke-static {p1, v7, v5, v8, p2}, Ljava/lang/System;->arraycopy([BI[BII)V
+    invoke-static {p1, v7, v5, v8, p2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 2020
     invoke-static {v5}, Lcom/quicinc/cne/Native$CneMessage;->parseFrom([B)Lcom/quicinc/cne/Native$CneMessage;
