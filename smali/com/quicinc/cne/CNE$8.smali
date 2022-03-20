@@ -29,7 +29,11 @@
     .line 2454
     iput-object p1, p0, Lcom/quicinc/cne/CNE$8;->this$0:Lcom/quicinc/cne/CNE;
 
-    invoke-direct {p0, p2, p3}, Landroid/telephony/PhoneStateListener;-><init>(ILandroid/os/Looper;)V
+    new-instance p0, Ljava/lang/Integer;
+
+    invoke-direct {p0, p2}, Ljava/lang/Integer;-><init>(I)V
+
+    invoke-direct {p0, p0, p3}, Landroid/telephony/PhoneStateListener;-><init>(ILandroid/os/Looper;)V
 
     return-void
 .end method
