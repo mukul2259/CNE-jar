@@ -20,7 +20,7 @@
 
 # direct methods
 .method constructor <init>(Lcom/quicinc/cne/CNE;ILandroid/os/Looper;)V
-    .locals 0
+    .locals 1
     .param p1, "this$0"    # Lcom/quicinc/cne/CNE;
     .param p2, "$anonymous0"    # I
     .param p3, "$anonymous1"    # Landroid/os/Looper;
@@ -29,15 +29,14 @@
     .line 2454
     iput-object p1, p0, Lcom/quicinc/cne/CNE$8;->this$0:Lcom/quicinc/cne/CNE;
 
-    new-instance p0, Ljava/lang/Integer;
+    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    invoke-direct {p0, p2}, Ljava/lang/Integer;-><init>(I)V
+    move-result-object v0
 
-    invoke-direct {p0, p0, p3}, Landroid/telephony/PhoneStateListener;-><init>(ILandroid/os/Looper;)V
+    invoke-direct {p0, v0, p3}, Landroid/telephony/PhoneStateListener;-><init>(Ljava/lang/Integer;Landroid/os/Looper;)V
 
     return-void
 .end method
-
 
 # virtual methods
 .method public onServiceStateChanged(Landroid/telephony/ServiceState;)V
