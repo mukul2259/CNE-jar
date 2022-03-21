@@ -5991,7 +5991,6 @@
     const-string/jumbo v3, "data_roaming"
 
     .line 386
-    invoke-static {v2, v3, p1}, Landroid/telephony/TelephonyManager;->getIntWithSubId(Landroid/content/ContentResolver;Ljava/lang/String;I)I
     :try_end_1
     .catch Landroid/provider/Settings$SettingNotFoundException; {:try_start_1 .. :try_end_1} :catch_0
 
